@@ -8,3 +8,5 @@ database = os.path.join(BASE_DIR, "my_database.sq3")  # Crée un chemin relatif 
 
 connexion = sqlite3.connect(database)
 
+# Créer un curseur pour exécuter des requêtes
+cursor = connexion.cursor()
