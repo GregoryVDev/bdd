@@ -10,3 +10,5 @@ connexion = sqlite3.connect(database)
 
 # Créer un curseur pour exécuter des requêtes
 cursor = connexion.cursor()
+
+cursor.execute("CREATE TABLE etudiants(numero_etudiant integer primary key unique, nom_etudiant varchar, prenom_etudiant varchar, age_etudiant integer, parcours_etudiant varchar)")
